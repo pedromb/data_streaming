@@ -111,7 +111,7 @@ if __name__ == "__main__":
             spark_context, spark_batch_interval)
         
         sql_context = SQLContext(spark_context)
-        # gsdmm = spark_context.broadcast(model)
+        #gsdmm = spark_context.broadcast(model)
 
         ## Create Kinesis Stream
         kinesis_stream = KinesisUtils.createStream(
